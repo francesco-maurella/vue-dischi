@@ -14,7 +14,7 @@ new Vue({
     showIf : function(item){
       return (item === this.selected) ?
       item === this.selected :
-      item != this.selected
+      this.selected === ''
     }
   },
 
