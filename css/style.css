@@ -1,80 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background: #1E2D3B;
-    min-height: 100vh;
+  background: #1E2D3B;
+  min-height: 100vh;
+}
+
+.flx {
+  display: flex;
+}
+
+.al-cntr {
+  align-items: center;
 }
 
 .container {
-    width: 1070px;
-    height: 100%;
-    margin: 0 auto;
+  max-width: 1070px;
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
 }
 
 header {
-    width: 100%;
-    height: 70px;
-    background: rgb(46, 58, 70);
-}
-header img {
-    height: 50px;
-    margin-top: 10px;
-}
-
-.cds-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 100px 0;
-}
-
-.selectors {
   width: 100%;
-  text-align: center;
-  padding-bottom: 50px;
+  height: 70px;
+  padding: 20px;
+  background: rgb(46, 58, 70);
+}
+
+header img {
+  height: 50px;
+  margin-top: 10px;
 }
 
 .selectors > select {
-  font-size: 1.25em;
+  font-size: 1.2em;
   background-color: #15293B;
   color: #FFF;
 }
 
+.cds-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
 .cd {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    flex-basis: 200px;
-    padding: 20px;
-    margin: 10px 20px;
-    height: 360px;
-    background: rgb(46, 58, 70);
-    text-align: center;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 360px;
+  background: rgb(46, 58, 70);
+  text-align: center;
 }
 
 .cd img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .cd h3 {
-    margin: 20px 0;
-    color: white;
-    font-size: 22px;
-    text-transform: uppercase;
+  margin: 20px 0;
+  color: #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .cd span.author {
-    color: grey;
-    font-size: 20px;
+  color: grey;
+  font-size: 20px;
 }
 
 .cd span.year {
-    color: grey;
+  color: grey;
 }
