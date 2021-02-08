@@ -34,6 +34,18 @@ header img {
     padding: 100px 0;
 }
 
+.selectors {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.selectors > select {
+  font-size: 1.25em;
+  background-color: #15293B;
+  color: #FFF;
+}
+
 .cd {
     display: flex;
     justify-content: flex-start;

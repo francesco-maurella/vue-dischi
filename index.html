@@ -16,12 +16,18 @@
         </header>
 
         <div id="app" class="cds-container container">
+          <nav class="selectors">
+            <select v-model="selected">
+              <option disabled value="">Please select one</option>
+              <option v-for="genre in genres">{{genre}}</option>
+            </select>
+          </nav>
             <!-- Disco ad esempio -->
-            <div v-for="disc in discsList" class="cd">
-                <img :src="disc.poster" alt="poster">
-                <h3>{{disc.title}}</h3>
-                <span class="author">{{disc.author}}</span>
-                <span class="year">{{disc.year}}</span>
+            <div v-if="showIf(disc.genre)" v-for="(disc, i) in discsList" class="cd">
+              <img :src="disc.poster" alt="poster">
+              <h3>{{disc.title}}</h3>
+              <span class="author">{{disc.author}}</span>
+              <span class="year">{{disc.year}}</span>
             </div>
         </div>
 
