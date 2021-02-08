@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>JAVASCRIPT - API / VUEJS [Dischi musicali]</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=" css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="img/logo.png" alt="logo" />
+            </div>
+        </header>
+
+        <div id="app" class="cds-container container">
+            <!-- Disco ad esempio -->
+            <div v-for="disc in discsList" class="cd">
+                <img :src="disc.poster" alt="poster">
+                <h3>{{disc.title}}</h3>
+                <span class="author">{{disc.author}}</span>
+                <span class="year">{{disc.year}}</span>
+            </div>
+        </div>
+
+
+        <script src="js/script.js" charset="utf-8"></script>
+    </body>
+</html>
